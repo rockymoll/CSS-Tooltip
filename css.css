@@ -1,0 +1,10 @@
+*{margin:0;padding:0;}
+body{text-align:center;}
+a{display:inline-block;margin:200px 0;position:relative;}
+a:before{content:[title]}
+
+
+
+
+
+
