@@ -2,9 +2,13 @@
 body{text-align:center;font-family:sans-serif;padding:100px;color:#333}
 h2{margin-bottom:200px;font-size:14px;}
 
-.link{display:inline-block;position:relative;text-decoration:none}
+.link {
+	display: inline-block;
+	position: relative;
+	text-decoration: none
+}
 .link:hover:before {
-	content: attr(title);
+	content: attr(data-title);
 	position: absolute;
 	background: #333;
 	height: 25px;
@@ -29,9 +33,3 @@ h2{margin-bottom:200px;font-size:14px;}
 	left: 50%;
 	margin-left: -5px;
 }
-
-
-
-
-
-
