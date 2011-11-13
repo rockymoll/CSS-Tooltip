@@ -1,7 +1,31 @@
 *{margin:0;padding:0;}
 body{text-align:center;}
-a{display:inline-block;margin:200px 0;position:relative;}
-a:before{content:[title]}
+a{display:inline-block;margin:200px 0;position:relative;text-decoration:none;font-family:sans-serif}
+a:hover:before {
+	content: attr(title);
+	position: absolute;
+	background: #333;
+	height: 25px;
+	line-height: 25px;
+	padding: 0 10px;
+	top: -30px;
+	left: -10px;
+	white-space: nowrap;
+	color: #fff;
+	border-radius: 5px;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+}
+a:hover:after {
+	content: '';
+	width: 0;
+	height: 0;
+	border: solid;
+	border-width: 5px 5px 0;
+	border-color: #333 transparent;
+	position: absolute;
+	top: -5px;
+	left: 0;
+}
 
 
 
