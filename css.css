@@ -1,35 +1,33 @@
-*{margin:0;padding:0}
 body{text-align:center;font-family:sans-serif;padding:100px;color:#333}
-h2{margin-bottom:100px;font-size:14px;}
+h2{margin-bottom:100px;font-size:14px}
 
-.link {
-	display: inline-block;
+.tooltip {
 	position: relative;
-	text-decoration: none
+	text-decoration: none;
 }
-.link:hover:before {
-	content: attr(data-title);
-	position: absolute;
+.tooltip:hover:before {
 	background: #333;
-	height: 25px;
-	line-height: 25px;
-	padding: 0 10px;
-	top: -30px;
-	left: -50%;
-	white-space: nowrap;
-	color: #fff;
 	border-radius: 5px;
 	box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+	color: #fff;
+	content: attr(data-title);
+	height: 25px;
+	left: -50%;
+	line-height: 25px;
+	position: absolute;
+	padding: 0 10px;
+	top: -30px;
+	white-space: nowrap;
 }
-.link:hover:after {
-	content: '';
-	width: 0;
-	height: 0;
+.tooltip:hover:after {
 	border: solid;
 	border-width: 5px 5px 0;
 	border-color: #333 transparent;
-	position: absolute;
-	top: -5px;
+	content: '';
+	height: 0;
 	left: 50%;
 	margin-left: -5px;
+	position: absolute;
+	top: -5px;
+	width: 0;
 }
